@@ -10,7 +10,6 @@ function reloadOnResize() {
       }
     });
   }
-  
   // Appelle la fonction
   reloadOnResize();
 
