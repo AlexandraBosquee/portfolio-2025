@@ -1,0 +1,78 @@
+.marteau-1 
+    fill: none
+    stroke: #182240
+    stroke-miterlimit: 10
+
+
+.marteau-2 
+    fill: #f3c14d
+
+
+.marteau-3 
+    fill: #eddeeb
+
+
+.marteau-4 
+    fill: #237ab5
+
+
+.marteau-5 
+    fill: #182240
+
+
+.marteau-6 
+    fill: #c12934
+
+
+.marteau
+    min-height: 60vh
+    aspect-ratio: 1/1
+    margin-left:  15%
+    text-align: end
+    margin-top: -10%
+    svg
+        display: inline-block
+        height: 100%
+        transform: rotate(-60deg)
+        transform-origin: bottom center
+        animation: marteau 1s  3
+
+@keyframes marteau
+    0%, 100% 
+        transform: rotate(-60deg)
+  
+    50% 
+        transform: rotate(-90deg)
+
+
+.construction
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    span
+        margin-top: 7rem
+        font-family: 'bebas_neueregular'
+        font-size: clamp(1.2rem, 4vw, 3rem)
+
+
+
+@media (max-width: $tablet)
+
+    .marteau
+        min-height: 0
+        min-width: 60vw
+        svg
+            width: 35%
+    .construction
+        span
+            margin-top: 5rem
+
+@media (max-width: $phone)
+
+    .marteau
+        svg
+            width: 35%
+    .construction
+        span
+            margin-top: 3rem

@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon portfolio</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header>
+    <h1>
+      Nana Mobilier : Projet d'E-commerce
+    </h1>
+    <div id="mySidenav" class="sidenav ">
+      <a id="closeBtn" href="#" class="close">×</a>
+      <ul>
+        <li><a href="/index.html">Acceuil</a></li>
+        <li><a href="/formation.html">formation</a></li>
+        <li><a href="/etudes.html">études</a></li>
+        <li><a href="/experiences.html">expérience professionnel</a></li>
+        <li><a href="/travaux.html">travaux</a></li>
+        <li><a href="/tools.html">outils</a></li>
+        <li><a href="/soft_skills.html">soft skills</a></li>
+        <li><a href="/hobbys.html">hobbys</a></li>
+        <li><a href="/index.html">infos</a></li>
+      </ul>
+    </div>
+    <a href="#" id="openBtn">
+      <span class="burger-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </a>
+  </header>
+
+
+  <div class="container container-phone">
+    <div class="thumbnail">
+      <img 
+            srcset="
+              img/thumbnail-640.webp 640w,
+              img/thumbnail-960.webp 960w,
+              img/thumbnail-1280.webp 1280w,
+              img/thumbnail-1920.webp 1920w"
+            sizes="(max-width: 640px) 640px,
+                  (max-width: 960px) 960px,
+                  (max-width: 1280px) 1280px,
+                  1920px"
+            src="img/thumbnail-1280.webp" 
+            alt="Description de l’image">
+    </div>
+
+
+
+    <div class="col-1 anim">
+      <h2 class="titre">Contexte du Projet</h2>
+      <div class="texte">
+        <p>Dans le cadre de ma formation en ligne sur WordPress, j'ai voulu aller plus loin dans mes compétences en
+          explorant WooCommerce, une extension essentielle pour créer des boutiques en ligne. J'avais déjà des bases en
+          WordPress acquises il y a quelques années, mais c'était ma première fois avec WooCommerce. Ce projet m’a
+          permis
+          de découvrir et de m’approprier cette plateforme tout en apprenant à l'utiliser de manière efficace et
+          structurée. <br> Mon objectif ? Montrer que je savais créer un site e-commerce sur mesure. J’ai choisi de
+          travailler avec le thème gratuit Storefront, que j’ai entièrement personnalisé via un thème enfant. Ce projet
+          m'a donné l'opportunité de mettre en avant mes compétences en développement front-end, tout en concevant une
+          boutique en ligne à la fois fonctionnelle et visuellement attrayante.</p>
+      </div>
+    </div>
+
+
+
+    <div class="col-2">
+      <h2 class="titre">Éléments Personnalisés et Modifications Apportées</h2>
+      <p class="col-2-p">Pour ce projet, j’ai travaillé avec Elementor (version gratuite) et du CSS personnalisé, en adaptant le thème
+        Storefront à mes besoins tout en suivant les bonnes pratiques front-end. J’ai aussi configuré WooCommerce pour
+        donner vie à une boutique en ligne complète, avec des produits fictifs, des descriptions, des prix et des
+        images. Voici les éléments-clés que j’ai développés:</p>
+
+      <div class="col-50">
+        <p class="point"><strong>Bannière d’accueil (Section Hero) :</strong> <br> J’ai conçu une bannière d’accueil
+          captivante avec
+          Elementor. Elle attire immédiatement l’attention et donne une ambiance moderne et professionnelle, en
+          cohérence avec le thème de la boutique (un magasin de meubles).</p>
+        <div class="images">
+          <div class="images_container">
+            <img 
+              srcset="
+                img/produits-300.webp 300w,
+                img/produits-500.webp 500w,
+                img/produits-700.webp 700w,
+                img/produits-900.webp 900w"
+              sizes="(max-width: 764px) 700px, 
+                    (max-width: 1024px) 50vw, 
+                    900px" 
+              src="img/produits-700.webp" 
+              alt="Description de l’image">
+          </div>
+          <div class="images_container">
+            <img 
+            srcset="
+              img/herosection-300.webp 300w,
+              img/herosection-500.webp 500w,
+              img/herosection-700.webp 700w,
+              img/herosection-900.webp 900w"
+            sizes="(max-width: 764px) 700px, 
+                  (max-width: 1024px) 50vw, 
+                  900px" 
+            src="img/herosection-700.webp" 
+            alt="Description de l’image">
+          </div>
+        </div> <!-- fin div images -->
+      </div> <!-- fin div col-50 -->
+
+      <div class="col-50">
+        <p class="point"><strong>Catégories de Produits :</strong> <br> J’ai ajouté une section mettant en avant les
+          catégories principales
+          de produits juste en dessous de la bannière. J’ai utilisé des shortcodes WooCommerce pour les afficher, puis
+          j’ai stylisé cette section avec du CSS, ajoutant un effet hover qui révèle le nom des catégories au survol.
+        </p>
+        <div class="images">
+          <div class="images_container">
+            <img 
+            srcset="
+              img/categories.webp 300w,
+              img/categories-500.webp 500w,
+              img/categories-700.webp 700w,
+              img/categories-900.webp 900w"
+            sizes="(max-width: 764px) 700px, 
+                  (max-width: 1024px) 50vw, 
+                  900px" 
+            src="img/categories-700.webp" 
+            alt="Description de l’image">
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-50">
+        <p class="point"><strong>Sélection de Produits avec Onglets :</strong> <br> Une section présente des sélections
+          spécifiques :
+          nouveautés, best-sellers et promotions. J’ai utilisé des onglets dans Elementor que j’ai personnalisés pour
+          ressembler à des boutons interactifs. J’ai également utilisé des shortcodes pour afficher dynamiquement les
+          produits correspondants, tout en adaptant l'apparence des cartes produits à l’ensemble du design..</p>
+        <div class="images">
+          <div class="images_container">
+            <img 
+            srcset="
+              img/selections_01-300.webp 300w,
+              img/selections_01-500.webp 500w,
+              img/selections_01-700.webp 700w,
+              img/selections_01-900.webp 900w"
+            sizes="(max-width: 764px) 700px, 
+                  (max-width: 1024px) 50vw, 
+                  900px" 
+            src="img/selections_01-700.webp" 
+            alt="Description de l’image">
+          </div>
+          <div class="images_container">
+            <img 
+            srcset="
+              img/selections_02-300.webp 300w,
+              img/selections_02-500.webp 500w,
+              img/selections_02-700.webp 700w,
+              img/selections_02-900.webp 900w"
+            sizes="(max-width: 764px) 700px, 
+                  (max-width: 1024px) 50vw, 
+                  900px" 
+            src="img/selections_02-700.webp" 
+            alt="Description de l’image">
+          </div>
+        </div>
+      </div> <!-- Fin col-50 -->
+
+      <div class="col-50">
+        <div class="seo">
+          <p class="point"><strong>Optimisation SEO et Fonctionnalités Supplémentaires : </strong><br> Afin de rendre le
+            site plus crédible
+            et prêt à l’emploi, j’ai ajouté plusieurs fonctionnalités:</p>
+          <ul>
+            <li>Texte et images optimisés pour le SEO, pour renforcer la visibilité dans les moteurs de recherche.</li>
+            <li>Un bouton d’abonnement à la newsletter, pour capter des leads.</li>
+            <li>Une FAQ sous forme de menu accordéon, pratique pour répondre aux questions courantes et améliorer
+              l’expérience utilisateur.</li>
+          </ul>
+        </div>
+        <div class="images">
+          <div class="images_container">
+            <img 
+            srcset="
+              img/texte_seo_03.webp 300w,
+              img/texte_seo_03-500.webp 500w,
+              img/texte_seo_03-700.webp 700w,
+              img/texte_seo_03-900.webp 900w"
+            sizes="(max-width: 764px) 700px, 
+                  (max-width: 1024px) 50vw, 
+                  900px" 
+            src="img/texte_seo_03-700.webp" 
+            alt="Description de l’image">
+          </div>
+          <div class="images_container">
+            <img 
+            srcset="
+              img/texte_seo_02.webp 300w,
+              img/texte_seo_02-500.webp 500w,
+              img/texte_seo_02-700.webp 700w,
+              img/texte_seo_02-900.webp 900w"
+            sizes="(max-width: 764px) 700px, 
+                  (max-width: 1024px) 50vw, 
+                  900px" 
+            src="img/texte_seo_02-700.webp" 
+            alt="Description de l’image">
+          </div>
+          <div class="images_container">
+            <img 
+            srcset="
+              img/texte_seo.webp 300w,
+              img/texte_seo-500.webp 500w,
+              img/texte_seo-700.webp 700w,
+              img/texte_seo-900.webp 900w"
+            sizes="(max-width: 764px) 700px, 
+                  (max-width: 1024px) 50vw, 
+                  900px" 
+            src="img/texte_seo-700.webp" 
+            alt="Description de l’image">
+          </div>
+        </div>
+      </div>
+
+
+    <div class="col-1 anim">
+      <h2 class="titre">Résumé</h2>
+      <div class="texte">
+        <p>Ce projet m’a permis de concevoir une boutique en ligne totalement fonctionnelle, en n’utilisant que des
+          outils
+          gratuits comme Elementor et WooCommerce. Grâce à des personnalisations CSS, j’ai pu créer un design moderne et
+          fluide tout en m’assurant que le site était optimisé pour le SEO et prêt à simuler un environnement commercial
+          complet.</p>
+      </div>
+    </div>
+
+
+    <div class="col-1 anim">
+      <h2 class="titre">Technologies et Outils Utilisés</h2>
+      <div class="texte">
+        <p class="intro">Ce projet m’a permis d'explorer plusieurs technologies:</p>
+        <ul>
+          <li><strong>CMS :</strong> WordPress</li>
+          <li><strong>Splide.js :</strong> Un carrousel interactif pour une exploration engageante des stéréotypes.</li>
+          <li><strong>Extensions :</strong>
+            <ul>
+              <li><strong>Elementor :</strong> Construction des pages et personnalisation visuelle.</li>
+              <li><strong>WooCommerce :</strong> Gestion des produits et fonctionnalités e-commerce.</li>
+              <li><strong>Imagify :</strong> Optimisation des images pour de meilleures performances.</li>
+              <li><strong>Yoast SEO :</strong> Amélioration du référencement naturel.</li>
+            </ul>
+          </li>
+          <li><strong>Langages :</strong> CSS, HTML</li>
+          <li><strong>Shortcodes :</strong> Personnalisation des affichages (catégories, produits).</li>
+        </ul>
+      </div>
+    </div>
+  </div> <!-- Fin container PHONE -->
+
+
+  <!-- ====================================================================== -->
+
+
+
+
+  <div class="container container-desktop">
+    <div class="thumbnail">
+      <img 
+      srcset="
+        img/thumbnail-640.webp 640w,
+        img/thumbnail-960.webp 960w,
+        img/thumbnail-1280.webp 1280w,
+        img/thumbnail-1920.webp 1920w"
+      sizes="(max-width: 640px) 640px,
+            (max-width: 960px) 960px,
+            (max-width: 1280px) 1280px,
+            1920px"
+      src="img/thumbnail-1280.webp" 
+      alt="Description de l’image">
+    </div>
+
+
+
+    <div class="col-1 anim">
+      <h2 class="titre">Contexte du Projet</h2>
+      <div class="texte">
+        <p>Dans le cadre de ma formation en ligne sur WordPress, j'ai voulu aller plus loin dans mes compétences en
+          explorant WooCommerce, une extension essentielle pour créer des boutiques en ligne. J'avais déjà des bases en
+          WordPress acquises il y a quelques années, mais c'était ma première fois avec WooCommerce. Ce projet m’a
+          permis
+          de découvrir et de m’approprier cette plateforme tout en apprenant à l'utiliser de manière efficace et
+          structurée. <br> Mon objectif ? Montrer que je savais créer un site e-commerce sur mesure. J’ai choisi de
+          travailler avec le thème gratuit Storefront, que j’ai entièrement personnalisé via un thème enfant. Ce projet
+          m'a donné l'opportunité de mettre en avant mes compétences en développement front-end, tout en concevant une
+          boutique en ligne à la fois fonctionnelle et visuellement attrayante.</p>
+      </div>
+    </div>
+
+
+
+    <div class="col-2 col-nana">
+      <div class="col-50">
+        <div class="col-text">
+          <h2 class="titre">Éléments Personnalisés et Modifications Apportées</h2>
+          <p class="col-2-p">Pour ce projet, j’ai travaillé avec Elementor (version gratuite) et du CSS personnalisé, en
+            adaptant le
+            thème
+            Storefront à mes besoins tout en suivant les bonnes pratiques front-end. J’ai aussi configuré WooCommerce
+            pour
+            donner vie à une boutique en ligne complète, avec des produits fictifs, des descriptions, des prix et des
+            images. Voici les éléments-clés que j’ai développés:</p>
+          <ul>
+            <li id="item-01"><strong>Bannière d’accueil (Section Hero) :</strong><br>J’ai conçu une bannière d’accueil
+              captivante
+              avec
+              Elementor. Elle attire immédiatement l’attention et donne une ambiance moderne et professionnelle, en
+              cohérence avec le thème de la boutique (un magasin de meubles).</li>
+            <li id="item-02"><strong>Catégories de Produits :</strong><br>J’ai ajouté une section mettant en avant les
+              catégories
+              principales de produits juste en dessous de la bannière. J’ai utilisé des shortcodes WooCommerce pour les
+              afficher, puis j’ai stylisé cette section avec du CSS, ajoutant un effet hover qui révèle le nom des
+              catégories au survol.</li>
+            <li id="item-03"><strong>Sélection de Produits avec Onglets :</strong><br>Une section présente des
+              sélections spécifiques
+              :
+              nouveautés, best-sellers et promotions. J’ai utilisé des onglets dans Elementor que j’ai personnalisés
+              pour
+              ressembler à des boutons interactifs. J’ai également utilisé des shortcodes pour afficher dynamiquement
+              les
+              produits correspondants, tout en adaptant l'apparence des cartes produits à l’ensemble du design.</li>
+            <li id="item-04"><strong>Optimisation SEO et Fonctionnalités Supplémentaires :</strong><br>Afin de rendre le
+              site plus
+              crédible et prêt à l’emploi, j’ai ajouté plusieurs fonctionnalités :
+              <ul>
+                <li>Texte et images optimisés pour le SEO, pour renforcer la visibilité dans les moteurs de recherche.
+                </li>
+                <li>Un bouton d’abonnement à la newsletter, pour capter des leads.</li>
+                <li>Une FAQ sous forme de menu accordéon, pratique pour répondre aux questions courantes et améliorer
+                  l’expérience utilisateur.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-50" id="col-images">
+        <div class="images">
+          <div class="images_container">
+            <img 
+              srcset="
+                img/produits-300.webp 300w,
+                img/produits-500.webp 500w,
+                img/produits-700.webp 700w,
+                img/produits-900.webp 900w"
+              sizes="(max-width: 764px) 700px, 
+                    (max-width: 1024px) 50vw, 
+                    900px" 
+              src="img/produits-700.webp" 
+              alt="Description de l’image">
+          </div>
+          <div class="images_container" id="trigger-01">
+            <img 
+            srcset="
+              img/herosection-300.webp 300w,
+              img/herosection-500.webp 500w,
+              img/herosection-700.webp 700w,
+              img/herosection-900.webp 900w"
+            sizes="(max-width: 764px) 700px, 
+                  (max-width: 1024px) 50vw, 
+                  900px" 
+            src="img/herosection-700.webp" 
+            alt="Description de l’image">
+          </div>
+
+          <div class="images_container" id="trigger-02">
+            <img 
+            srcset="
+              img/categories.webp 300w,
+              img/categories-500.webp 500w,
+              img/categories-700.webp 700w,
+              img/categories-900.webp 900w"
+            sizes="(max-width: 764px) 700px, 
+                  (max-width: 1024px) 50vw, 
+                  900px" 
+            src="img/categories-700.webp" 
+            alt="Description de l’image">
+          </div>
+
+          <div class="images_container" id="trigger-03">
+            <img 
+            srcset="
+              img/selections_01-300.webp 300w,
+              img/selections_01-500.webp 500w,
+              img/selections_01-700.webp 700w,
+              img/selections_01-900.webp 900w"
+            sizes="(max-width: 764px) 700px, 
+                  (max-width: 1024px) 50vw, 
+                  900px" 
+            src="img/selections_01-700.webp" 
+            alt="Description de l’image">
+          </div>
+          <div class="images_container">
+            <img 
+            srcset="
+              img/selections_02-300.webp 300w,
+              img/selections_02-500.webp 500w,
+              img/selections_02-700.webp 700w,
+              img/selections_02-900.webp 900w"
+            sizes="(max-width: 764px) 700px, 
+                  (max-width: 1024px) 50vw, 
+                  900px" 
+            src="img/selections_02-700.webp" 
+            alt="Description de l’image">
+          </div>
+
+          <div class="images_container" id="trigger-04">
+            <img 
+            srcset="
+              img/texte_seo_03.webp 300w,
+              img/texte_seo_03-500.webp 500w,
+              img/texte_seo_03-700.webp 700w,
+              img/texte_seo_03-900.webp 900w"
+            sizes="(max-width: 764px) 700px, 
+                  (max-width: 1024px) 50vw, 
+                  900px" 
+            src="img/texte_seo_03-700.webp" 
+            alt="Description de l’image">
+          </div>
+          <div class="images_container">
+            <img 
+            srcset="
+              img/texte_seo_02.webp 300w,
+              img/texte_seo_02-500.webp 500w,
+              img/texte_seo_02-700.webp 700w,
+              img/texte_seo_02-900.webp 900w"
+            sizes="(max-width: 764px) 700px, 
+                  (max-width: 1024px) 50vw, 
+                  900px" 
+            src="img/texte_seo_02-700.webp" 
+            alt="Description de l’image">
+          </div>
+          <div class="images_container">
+            <img 
+            srcset="
+              img/texte_seo.webp 300w,
+              img/texte_seo-500.webp 500w,
+              img/texte_seo-700.webp 700w,
+              img/texte_seo-900.webp 900w"
+            sizes="(max-width: 764px) 700px, 
+                  (max-width: 1024px) 50vw, 
+                  900px" 
+            src="img/texte_seo-700.webp" 
+            alt="Description de l’image">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-1 anim">
+      <h2 class="titre">Résumé</h2>
+      <div class="texte">
+        <p>Ce projet m’a permis de concevoir une boutique en ligne totalement fonctionnelle, en n’utilisant que des
+          outils
+          gratuits comme Elementor et WooCommerce. Grâce à des personnalisations CSS, j’ai pu créer un design moderne et
+          fluide tout en m’assurant que le site était optimisé pour le SEO et prêt à simuler un environnement commercial
+          complet.</p>
+      </div>
+    </div>
+
+
+    <div class="col-1 anim">
+      <h2 class="titre">Technologies et Outils Utilisés</h2>
+      <div class="texte">
+        <p class="intro">Ce projet m’a permis d'explorer plusieurs technologies:</p>
+        <ul>
+          <li><strong>CMS :</strong> WordPress</li>
+          <li><strong>Splide.js :</strong> Un carrousel interactif pour une exploration engageante des stéréotypes.</li>
+          <li><strong>Extensions :</strong>
+            <ul>
+              <li><strong>Elementor :</strong> Construction des pages et personnalisation visuelle.</li>
+              <li><strong>WooCommerce :</strong> Gestion des produits et fonctionnalités e-commerce.</li>
+              <li><strong>Imagify :</strong> Optimisation des images pour de meilleures performances.</li>
+              <li><strong>Yoast SEO :</strong> Amélioration du référencement naturel.</li>
+            </ul>
+          </li>
+          <li><strong>Langages :</strong> CSS, HTML</li>
+          <li><strong>Shortcodes :</strong> Personnalisation des affichages (catégories, produits).</li>
+        </ul>
+      </div>
+    </div>
+  </div> <!-- Fin container DESKTOP -->
+
+
+
+
+
+  <footer>
+    <a href="/qui_est_le_vrai_monstre.html" class="btn btn-prev">
+      <span>&#10229;&nbsp;Travail&nbsp;précédente</span>
+    </a>
+    <a href="/index.html" class="btn btn-next">
+      <span>Outils&nbsp;en&nbsp;poche&nbsp;&#10230;</span>
+    </a>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/travaux.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "sass": "^1.82.0"
+  },
+  "dependencies": {
+    "gsap": "^3.12.7"
+  }
+}

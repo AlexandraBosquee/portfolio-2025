@@ -1,0 +1,200 @@
+.linge
+    margin: 0 6rem
+    display: flex
+    flex-direction: row
+    flex-wrap: nowrap
+    position: relative
+    transition: transition 1s ease
+    z-index: 6
+    &::after
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        z-index: 1
+        width: 100%
+        height: 3rem
+        border-bottom: 0.25rem solid $white
+        border-radius: 0 0 50% 50% 
+        pointer-events: none
+    &_pince
+        flex: 0 0 calc(100% / 4)
+        z-index: 8
+        height: 8rem 
+        position: relative
+        svg
+            position: absolute
+            top: -1rem
+            left: 50%
+            transform: translateX(-50%)
+            width: 100% 
+    &-wrapper 
+        position: relative
+        width: 100%
+        overflow: hidden
+    
+button 
+    display: none
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    background: $white
+    border: none
+    cursor: pointer
+    padding: 0.5rem 1rem
+    z-index: 7
+
+    &.prev 
+        left: 0
+    
+    &.next 
+        right: 0
+    
+
+.bain
+    position: relative
+    height: 20rem
+    margin-top: 16rem
+    &_svg, &_eau
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+
+    &_svg
+        height: 100%
+        z-index: 1
+    &_eau
+        height: 94.2%
+        z-index: 3
+
+.photo
+    display: block
+    background-color: $white
+    height: 14rem
+    aspect-ratio: 5/6
+    position: relative
+    margin: 0 auto
+    img , &_black
+        position: absolute
+        left: 50%
+        top: 4.5%
+        transform: translateX(-50%)
+        height: 76%
+        aspect-ratio: 1/1
+        z-index: 2
+    &_black
+        background: $Dblue
+        z-index: 3
+        opacity: 1
+        transition: opacity 3s ease
+        &.revele
+            opacity: 0
+            filter: blur(5px)
+    &_container
+        position: absolute
+        transition: top 0.5s ease, z-index 0.5s ease
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        z-index: 2
+    span
+        font-family: 'montserrat_alternatesregular'
+        position: absolute
+        bottom: 0.75rem
+        left: 50%
+        transform: translateX(-50%)
+        font-size: 1rem
+
+
+
+.hover
+    top: 38%
+    z-index: 5
+
+#photo
+    &_1 .photo
+        transform: rotate(20deg)
+
+    &_2 .photo
+        transform: rotate(5deg)
+
+    &_3 .photo
+        transform: rotate(-5deg)
+
+    &_4 .photo
+        transform: rotate(-15deg)
+
+
+
+.photo_container.fixe 
+
+    pointer-events: none
+
+
+.visible 
+    opacity: 1
+
+
+.invisible 
+    opacity: 0
+
+
+
+
+
+@media (max-width: $laptop)
+
+
+    .bain
+        height: 14rem
+        margin-top: 10rem
+    .photo
+        display: block
+        background-color: $white
+        height: 10rem  
+        span
+            font-size: 0.75rem
+
+
+
+
+
+@media (max-width: $tablet)
+    .linge
+        margin: 0 2rem
+        &::after
+            width: 200%
+        &_pince
+            flex: 0 0 50%
+    button 
+        display: block
+
+
+    .bain
+        height: 16rem
+        margin-top: 12rem
+    .photo
+        display: block
+        background-color: $white
+        height: 11rem  
+    
+    
+@media (max-width: $phone)
+    .linge
+        margin: 0 2rem
+        &::after
+            width: 400%
+        &_pince
+            flex: 0 0 100%
+    
+    .bain
+        height: 12rem
+        margin-top: 8rem
+    .photo
+        display: block
+        background-color: $white
+        height: 8rem
+        span
+            font-size: 0.75rem
+            bottom: 0.5rem

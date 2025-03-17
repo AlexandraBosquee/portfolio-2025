@@ -1,0 +1,174 @@
+.plante
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100%
+    height: 100%
+    #soft_skills
+        width: 40%
+        aspect-ratio: 4/3
+
+.racine
+    position: relative
+
+    &-container
+        position: relative
+
+    &-groupe
+        position: absolute
+
+.adj
+    position: relative
+    width: 100%
+    height: 100%
+    & span
+        bottom: 0
+        position: absolute
+        font-family: 'bebas_neueregular'
+        font-size: clamp(0.75rem, 2.5vw, 3rem)
+        color: $white
+    &-r-1
+        span
+            left: 50%
+            top: 0
+
+
+
+
+
+#racine_1
+    width: 10%
+    margin: -2% auto 0 auto
+    transform: translateX(20%)
+
+
+        
+    
+#groupe_1
+    top: 5%
+    left: 52%
+    width: 8%
+    span
+        left: 110%
+
+
+
+
+#groupe_2
+    width: 10%
+    top: 12%
+    left: 40%
+    span
+        right: 110%
+
+
+
+#groupe_3
+    top: 18%
+    left: 50%
+    width: 15%
+    span
+        left: 110%
+
+
+#groupe_4
+    top: 33%
+    left: 43%
+    width: 7%
+    span
+        right: 110%
+        &:first-child
+            bottom: 10rem
+
+
+#groupe_5
+    top: 48%
+    left: 53.5%
+    width: 12%
+    span
+        left: 110%
+
+
+#groupe_6
+    top: 66%
+    left: 52%
+    width: 2.5%
+    span
+        right: 110%
+
+
+#groupe_7
+    top: 81%
+    left: 55.8%
+    width: 3%
+    span
+        left: 110%
+
+
+.footer-skills
+    min-height: 35vh
+
+
+
+@media (max-width: $laptop)
+
+#groupe_4
+    span
+        &:first-child
+            bottom: 6rem
+
+
+
+
+@media (max-width: $phone)
+    .plante
+        #soft_skills
+            width: 60%
+
+    #racine_1
+        width: 15%
+
+
+        
+    
+    #groupe_1
+        top: 5%
+        left: 52%
+        width: 12%
+     
+    #groupe_2
+        width: 15%
+        top: 12%
+        left: 40%
+  
+    #groupe_3
+        top: 18%
+        left: 50%
+        width: 22%
+
+
+    #groupe_4
+        top: 33%
+        left: 43%
+        width: 11%
+        span
+            &:first-child
+                bottom: 4rem
+
+
+    #groupe_5
+        top: 48%
+        left: 53.5%
+        width: 18%
+
+
+    #groupe_6
+        top: 66%
+        left: 52.5%
+        width: 3.7%
+
+
+    #groupe_7
+        top: 81%
+        left: 58.5%
+        width: 4.5%

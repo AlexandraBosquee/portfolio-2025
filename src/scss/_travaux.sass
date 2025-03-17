@@ -1,0 +1,200 @@
+.travaux
+    list-style: none
+    &_list
+        margin: 1.5rem 5rem
+        color: $white
+        border-bottom: 0.125rem  solid $white
+        &:first-child
+            border-top: 0.125rem  solid $white
+        &_items
+            display: block
+            padding: 1.2rem
+            font-size: clamp(1rem, 5vw , 3rem) 
+            color: $white
+            text-decoration: none
+            font-family: 'bebas_neueregular'
+            z-index: 1
+        &:hover
+            .arrow_left
+                width: 2rem
+                border-top: 0.25rem solid $white
+                border-left: 0.25rem solid $white
+                margin: 0 1rem 0 3rem
+                &::after
+                    width: 0.25rem
+                    height: 5rem
+
+.arrow_left
+    margin: 0 1rem 0 0
+    width: 0
+    height: 2rem
+    border: none
+    display: inline-block
+    transform: rotate(135deg)
+    transition: all 0.2s
+    &::after
+        transition: all 0.1s
+        content: ""
+        display: block
+        width: 0rem
+        height: 0rem
+        background-color: $white
+        transform: rotate(-45deg) translate(1.655rem, 0.5rem)
+        left: 0
+        top: 0
+
+
+
+/** Page individuel ---------------------------------------------------**/
+
+video
+    width: 100%
+
+.thumbnail
+    width: 100%
+    margin: 1rem 0
+    aspect-ratio: 16/9
+    position: relative
+    overflow: hidden
+    img
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50% , -50%)
+        width: 100%
+
+.images
+    width: 100%
+    &_container 
+        margin: 1rem 0
+        aspect-ratio: 16/9
+        position: relative
+        overflow: hidden
+        img
+            position: absolute
+            left: 50%
+            top: 50%
+            transform: translate(-50% , -50%)
+            width: 100%
+
+.point
+    list-style: disc
+    display: list-item
+    margin: 0 1.5rem   
+
+
+
+
+
+/** Container DESKTOP  ----------------------------------------**/
+
+.container-phone
+    display: none
+
+
+.container-desktop
+    display: block
+    .col-2
+        display: flex
+        flex-direction: row
+
+    .col-50
+        width: 50%
+        &:first-child
+            padding-right: 0.5rem 
+        &:last-child
+            padding-left: 0.5rem 
+
+    .sub-titre
+        line-height: 1.5rem
+        
+
+
+
+
+
+
+@media (max-width: $tablet)
+    .travaux
+        &_list
+            margin: 1.5rem 2rem
+            &_items:hover
+                color: $red
+            &:hover
+                .arrow_left
+                    width: 1.2rem
+                    height: 1.2rem
+                    border-top: 0.25rem solid $white
+                    border-left: 0.25rem solid $white
+                    margin: 0 1rem 0 3rem
+                    &::after
+                        width: 0.25rem
+                        height: 3rem
+    .arrow_left::after
+        transform: rotate(-45deg) translate(0.97rem, 0.3rem)
+
+
+    .container-desktop
+        display: none
+    
+    .container-phone
+        display: block
+        p.point
+            strong
+                line-height: 0.8rem
+        .seo
+            width: 100%
+            margin: 0
+            p.point
+                width: calc( 100% - 1rem )       
+            ul
+                width: 100%
+                padding: 0.5rem 0 0.5rem 2rem
+        .sub-titre
+            line-height: 0.8rem
+
+
+
+@media (max-width: $phone)
+    .travaux
+        &_list
+            margin: 1rem
+            &_items
+                &:hover
+                    .arrow_left
+                        width: 0.75rem
+                        height: 0.75rem
+                        border-top: 0.125rem solid $white
+                        border-left: 0.125rem solid $white
+                        margin: 0 1rem 0 1rem
+                        &::after
+                            width: 0.125rem
+                            height: 2rem
+        .arrow_left::after
+            transform: rotate(-45deg) translate(0.65rem, 0.2rem)
+
+
+    .container-phone
+        display: block
+        .col-50
+            flex-direction: column
+            p
+                width: 100%
+                &.point
+                    width: calc( 100% - 1rem )
+                    margin: 0 0 0 1rem
+                    strong
+                        line-height: 0.8rem           
+            .images
+                width: 100%
+        .sub-titre
+            line-height: 0.8rem
+         
+        .seo
+            width: 100%
+            margin: 0
+            p.point
+                width: calc( 100% - 1rem )
+            ul
+                width: 100%
+                padding: 0.5rem 0 0.5rem 2rem

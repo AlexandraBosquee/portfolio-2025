@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140.12 337">
+  <defs>
+    <style>
+      .travaux-1 {
+        stroke: #e6e6e6;
+      }
+
+      .travaux-1, .travaux-2 {
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
+      }
+
+      .travaux-3 {
+        fill: #f3c14d;
+      }
+
+      .travaux-4 {
+        fill: #eddeeb;
+      }
+
+      .travaux-5 {
+        fill: #237ab5;
+      }
+
+      .travaux-2 {
+        fill: #182240;
+        stroke: #eddeeb;
+      }
+
+      .travaux-6 {
+        fill: #c12934;
+      }
+    </style>
+  </defs>
+  <g id="armoir">
+    <g>
+      <rect class="travaux-3" width="70" height="337"/>
+      <rect class="travaux-5" x="65.5" width="4.75" height="337"/>
+      <rect class="travaux-6" x="68.71" width="1.54" height="337"/>
+      <rect class="travaux-4" width="2.38" height="337"/>
+      <circle class="travaux-2" cx="35" cy="282" r="13"/>
+      <rect class="travaux-4" x="12" y="9" width="47" height="227"/>
+      <rect class="travaux-3" x="69.87" width="70" height="337"/>
+      <rect class="travaux-5" x="135.37" width="4.75" height="337"/>
+      <rect class="travaux-6" x="138.59" width="1.54" height="337"/>
+      <rect class="travaux-4" x="69.87" width="2.38" height="337"/>
+      <circle class="travaux-1" cx="104.87" cy="282" r="13"/>
+      <rect class="travaux-4" x="81.87" y="9" width="47" height="227"/>
+      <circle class="travaux-2" cx="105" cy="282" r="13"/>
+    </g>
+  </g>
+</svg>
