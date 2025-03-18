@@ -23,3 +23,4 @@ btnX.addEventListener('click', (event) => {
     document.querySelector(`.carte`).classList.remove('visible');
     document.querySelector(`.f-index`).classList.remove('index');
 });
+

@@ -1,0 +1,56 @@
+.landing
+    &-page
+        height: 100vh
+        background-color: $bg
+        color: $white
+    &-texte
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        width: 100%
+        height: 100%
+        span, p
+            display: inline-block
+            width: 100%
+        span
+            font-family: 'bebas_neueregular'
+            font-size: clamp(1.5rem, 4vw, 3rem)
+            margin-bottom: 1rem
+        p
+            font-family: 'montserrat_alternatesregular'
+            font-size: clamp(0.75rem, 2.5vw, 1.8rem)
+            padding: 0.5rem 0
+            strong
+                padding: 1.8rem 0 0 0
+                font-family: 'montserrat_alternatesmedium'
+    &-btn
+        text-align: right
+        width: 100%
+        padding: 2rem 0 0 0 
+        a
+            display: inline-block
+            width: fit-content
+            padding: 0.2rem 0.5rem 
+            border: 0.2rem solid $white
+            text-decoration: none
+            color: $white
+        &:hover
+            a
+                background-color: $white
+                color: $bg
+                cursor: pointer
+
+.invisible
+    display: none
+    z-index: 0
+
+@media (max-width: $tablet)
+    .landing
+        &-texte
+            span
+                margin-bottom: 0.5rem
+            p
+                padding: 0.3rem 0
+                strong
+                    padding: 0.5rem 0 0 0
