@@ -54,7 +54,7 @@ button
 .bain
     position: relative
     height: 20rem
-    margin-top: 16rem
+    margin-top: 2rem 
     &_svg, &_eau
         position: absolute
         left: 50%
@@ -66,7 +66,7 @@ button
         z-index: 1
     &_eau
         height: 94.2%
-        z-index: 3
+        z-index: 4
 
 .photo
     display: block
@@ -139,16 +139,56 @@ button
 .invisible 
     opacity: 0
 
+.click
+    position: absolute
+    color: $white
+    z-index: 3
+    top: 50%
+    left: 50%
+    transform: translate(-50% , -50%)
+    font-family: 'bebas_neueregular'
+    font-size: clamp(1.2rem, 4vw, 3rem)
+    span
+        animation-name: opacity
+        animation-duration: 1s
+        animation-iteration-count: 3
 
 
+.message
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    color: $white
+    font-family: 'bebas_neueregular'
+    font-size: clamp(1.2rem, 4vw, 2.25rem)
+    min-height: 10rem
+    .msg
+        &-desktop
+            display: block
+        &-phone
+            display: none
+     
 
+.animated
+    animation-delay: 2s
+    animation-name: opacity
+    animation-duration: 1s
+    animation-iteration-count: 2
+
+
+@keyframes opacity
+    0%, 100% 
+        opacity: 1 
+
+    50% 
+        opacity: 0.3
 
 @media (max-width: $laptop)
 
 
     .bain
         height: 14rem
-        margin-top: 10rem
     .photo
         display: block
         background-color: $white
@@ -173,11 +213,14 @@ button
 
     .bain
         height: 16rem
-        margin-top: 12rem
+        margin-top: 2rem
     .photo
         display: block
         background-color: $white
         height: 11rem  
+
+    .message
+        min-height: 10rem
     
     
 @media (max-width: $phone)
@@ -190,7 +233,7 @@ button
     
     .bain
         height: 12rem
-        margin-top: 8rem
+        margin-top: 2rem
     .photo
         display: block
         background-color: $white
@@ -200,3 +243,11 @@ button
             bottom: 0.5rem
     .prev , .next 
         display: none
+
+    .message
+        min-height: 6rem
+        .msg
+            &-desktop
+                display: none
+            &-phone
+                display: block
