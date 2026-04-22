@@ -210,7 +210,6 @@ bulles.forEach((bulle) => {
         trigger: bulle,
         start: "center center+=20%",
         toggleActions: "play none none reverse",
-        markers: true
       },
     })
     .from(bulle, {
