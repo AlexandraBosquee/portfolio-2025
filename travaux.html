@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Je suis Alex, développeur front-end.Ici, vous trouverez un aperçu de mon travail, mais aussi un peu de qui je suis à travers mes projets. J’aime allier créativité et fonctionnalité pour créer des expériences web qui comptent.">
+    <meta name="description"
+        content="Je suis Alex, développeur front-end.Ici, vous trouverez un aperçu de mon travail, mais aussi un peu de qui je suis à travers mes projets. J’aime allier créativité et fonctionnalité pour créer des expériences web qui comptent.">
     <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
     <link rel="shortcut icon" href="favicon/favicon.ico" />
@@ -13,6 +15,7 @@
     <title>Mon portfolio</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
 
     <header>
@@ -23,44 +26,54 @@
             <a id="closeBtn" href="#" class="close">×</a>
             <ul>
                 <li><a href="/acceuil.html">Acceuil</a></li>
-                <li><a href="/formation.html">formation</a></li>
-                <li><a href="/etudes.html">études</a></li>
-                <li><a href="/experiences.html">expérience professionnel</a></li>
+                <li><a href="/benevolat.html">bénévolat</a></li>
                 <li><a href="/travaux.html">travaux</a></li>
-                <li><a href="/tools.html">outils</a></li>
+                <li><a href="/tools.html">Boîte à outils</a></li>
+                <li><a href="/experiences.html">expérience professionnel</a></li>
+                <li><a href="/etudes.html">études</a></li>
                 <li><a href="/soft_skills.html">soft skills</a></li>
                 <li><a href="/hobbys.html">hobbys</a></li>
                 <li><a class="infos" href="/acceuil.html">infos</a></li>
             </ul>
-          </div>
-          <a href="#" id="openBtn" aria-label="Burger menu" >
+        </div>
+        <a href="#" id="openBtn" aria-label="Burger menu">
             <span class="burger-icon">
-              <span></span>
-              <span></span>
-              <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
             </span>
-          </a>
+        </a>
     </header>
 
 
-    <ul class="travaux">
-        <li class="travaux_list">
-            <a data-image="medusa.JPG"  href="/culture_du_oui.html" class="travaux_list_items">
-                <span class="arrow_left"></span>
-                <span class="travaux_titre">Culture du oui</span>
-            </a></li>
-        <li class="travaux_list">
-            <a data-image="nana.JPG" href="nana_mobiler.html" class="travaux_list_items">
-                <span class="arrow_left"></span>
-                <span class="travaux_titre">Nana Mobilier : Projet d'E-commerce</span>
-            </a>
-        </li>
-    </ul>
+    <div class="container_travaux">
+        <a href="/culture_du_oui.html" class="folder">
+            <span class="travaux_titre">Culture du oui</span>
+        </a>
+
+        <a href="/waka_up.html" class="folder">
+            <span class="travaux_titre">Waka Up : Refonte du site </span>
+        </a>
+
+        <a href="/nana_mobiler.html" class="folder">
+            <span class="travaux_titre">Nana Mobilier : Projet d'E-commerce</span>
+        </a>
+
+        <a href="#" class="folder construction">
+            <span class="travaux_titre">Parcotek</span>
+            <div class="site_construction">
+                <div class="illu_marteau" id="marteau"></div>
+                <span>Site en Construction</span>
+            </div>
+        </a>
+    </div>
 
 
 
     <footer></footer>
     <script src="js/script.js"></script>
+    <script src="js/fetch_marteau.js"></script>
 
 </body>
+
 </html>

@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Je suis Alex, développeur front-end.Ici, vous trouverez un aperçu de mon travail, mais aussi un peu de qui je suis à travers mes projets. J’aime allier créativité et fonctionnalité pour créer des expériences web qui comptent.">
+  <meta name="description"
+    content="Je suis Alex, développeur front-end.Ici, vous trouverez un aperçu de mon travail, mais aussi un peu de qui je suis à travers mes projets. J’aime allier créativité et fonctionnalité pour créer des expériences web qui comptent.">
   <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
   <link rel="shortcut icon" href="favicon/favicon.ico" />
@@ -18,23 +19,23 @@
 <body>
   <header>
     <h1 class="page-titre">
-      Qui est le vrai monstre ?
+      Culture du oui
     </h1>
     <div id="mySidenav" class="sidenav ">
       <a id="closeBtn" href="#" class="close">×</a>
       <ul>
         <li><a href="/acceuil.html">Acceuil</a></li>
-        <li><a href="/formation.html">formation</a></li>
-        <li><a href="/etudes.html">études</a></li>
-        <li><a href="/experiences.html">expérience professionnel</a></li>
+        <li><a href="/benevolat.html">bénévolat</a></li>
         <li><a href="/travaux.html">travaux</a></li>
-        <li><a href="/tools.html">outils</a></li>
+        <li><a href="/tools.html">Boîte à outils</a></li>
+        <li><a href="/experiences.html">expérience professionnel</a></li>
+        <li><a href="/etudes.html">études</a></li>
         <li><a href="/soft_skills.html">soft skills</a></li>
         <li><a href="/hobbys.html">hobbys</a></li>
         <li><a class="infos" href="/acceuil.html">infos</a></li>
       </ul>
     </div>
-    <a href="#" id="openBtn" aria-label="Burger menu" >
+    <a href="#" id="openBtn" aria-label="Burger menu">
       <span class="burger-icon">
         <span></span>
         <span></span>
@@ -44,26 +45,36 @@
   </header>
 
   <div class="container container-phone">
-    <video controls>
-      <source src="/video/video_medusa.mp4" type="video/mp4" />
-      <p>Vidéo de démonstration de mon site "Qui est le vrai monstre"</p>
-    </video>
+    <div class="thumbnail">
+      <img srcset="
+              img/Culture_thumbnail-640.webp 640w,
+              img/Culture_thumbnail-960.webp 960w,
+              img/Culture_thumbnail-1280.webp 1280w,
+              img/Culture_thumbnail-1920.webp 1920w" sizes="(max-width: 640px) 640px,
+                  (max-width: 960px) 960px,
+                  (max-width: 1280px) 1280px,
+                  1920px" src="img/Culture_thumbnail-1280.webp" alt="Description de l’image">
+    </div>
 
 
 
     <div class="col-1 anim">
       <h2 class="titre">Contexte du Projet</h2>
       <div class="texte">
-        <p><strong>"Qui est le vrai monstre ?"</strong> n’est pas juste un projet de fin d’études, c’est une démarche
-          qui
-          me tient à cœur. Ce site web explore la culture du viol, un phénomène qui banalise les agressions sexuelles et
-          perpétue des injustices envers les victimes. L’idée est née d’une réflexion personnelle sur la stigmatisation
-          des victimes, inspirée par le mythe de Méduse. Cette figure tragique, transformée en "monstre" après avoir
-          subi
-          une agression, représente encore aujourd’hui le silence et le rejet imposés à tant de personnes. Le site a une
-          double mission: éveiller les consciences et proposer des outils concrets pour agir. Il invite à déconstruire
-          les
-          préjugés et à participer activement à un changement sociétal.</p>
+        <p><strong>Culture du Oui</strong> a débuté comme mon Travail de Fin d'Études. Inspiré par le mythe de Méduse –
+          symbole de la victime transformée en "monstre" – j'ai voulu explorer la culture du viol et la stigmatisation
+          des victimes. Méduse reste le fil conducteur de cette histoire, un point de départ mythologique pour parler de
+          réalités contemporaines.</p>
+        <p>La première version se concentrait sur la visualisation de données brutes : montrer l'ampleur du viol,
+          débusquer les stéréotypes. Si l'impact visuel était là, je sentais que le message restait parfois froid.</p>
+        <p><strong>En août 2025</strong>, j'ai repris le projet mais j'ai transformé l'approche. Le site est maintenant
+          plus ludique, plus interactif. J'ai intégré des quiz, des petites interactions et une narration plus profonde.
+          L'objectif n'est plus seulement de "montrer" le problème, mais de proposer des solutions concrètes et
+          d'éduquer le public avec bienveillance.</p>
+        <p><strong>Aujourd'hui</strong>, c'est un travail en cours, mais déjà actif. C'est une démarche personnelle pour
+          changer les choses, une ligne après l'autre.
+
+        </p>
       </div>
     </div>
 
@@ -71,251 +82,135 @@
 
     <div class="col-2">
       <h2 class="titre">Une Approche Engagée et Créative</h2>
-      <p class="col-2-p">Sensibilisation à travers le design et le contenu:</p>
+      <p class="col-2-p">Voici les piliers sur lesquels j'ai construit cette nouvelle version :
+      </p>
 
       <div class="col-50" id="col-pin-1">
-        <p class="point" id="pin-1"><strong>Une narration immersive :</strong> <br> Le parallèle avec Méduse apporte une
-          touche artistique et émotionnelle, connectant mythologie et problématiques actuelles.</p>
+        <p class="point" id="pin-1"><strong>. Interactivité :
+          </strong> <br> J'ai voulu briser la monotonie du défilement de données. J'ai intégré plusieurs formats de quiz
+          ludiques et des interactions au clic (comme le générateur de Safe Word). Mon objectif est que l'utilisateur ne
+          soit pas passif : il doit interagir, piquer sa curiosité et rester engagé dans le parcours.
+        </p>
         <div class="images">
           <div class="images_container">
-            <img 
-            srcset="
-              img/medusa_01-300.webp 300w,
-              img/medusa_01-500.webp 500w,
-              img/medusa_01-700.webp 700w,
-              img/medusa_01-900.webp 900w"
-            sizes="(max-width: 300px) 300px,
+            <img srcset="
+              img/culture_01-300.webp 300w,
+              img/culture_01-500.webp 500w,
+              img/culture_01-700.webp 700w,
+              img/culture_01-900.webp 900w" sizes="(max-width: 300px) 300px,
                   (max-width: 500px) 500px,
                   (max-width: 700px) 700px,
-                  900px"
-            src="img/medusa_01-700.webp" 
-            alt="Description de l’image">
+                  900px" src="img/culture_01-700.webp" alt="Description de l’image">
           </div>
           <div class="images_container">
-            <img 
-            srcset="
-              img/medusa_02-300.webp 300w,
-              img/medusa_02-500.webp 500w,
-              img/medusa_02-700.webp 700w,
-              img/medusa_02-900.webp 900w"
-            sizes="(max-width: 300px) 300px,
+            <img srcset="
+              img/culture_02-300.webp 300w,
+              img/culture_02-500.webp 500w,
+              img/culture_02-700.webp 700w,
+              img/culture_02-900.webp 900w" sizes="(max-width: 300px) 300px,
                   (max-width: 500px) 500px,
                   (max-width: 700px) 700px,
-                  900px"
-            src="img/medusa_02-700.webp" 
-            alt="Description de l’image">
+                  900px" src="img/culture_02-700.webp" alt="Description de l’image">
           </div>
-          <div class="images_container">
-            <img 
-            srcset="
-              img/medusa_03-300.webp 300w,
-              img/medusa_03-500.webp 500w,
-              img/medusa_03-700.webp 700w,
-              img/medusa_03-900.webp 900w"
-            sizes="(max-width: 300px) 300px,
-                  (max-width: 500px) 500px,
-                  (max-width: 700px) 700px,
-                  900px"
-            src="img/medusa_03-700.webp" 
-            alt="Description de l’image">
-          </div>
-          <div class="images_container">
-            <img 
-            srcset="
-              img/medusa_04-300.webp 300w,
-              img/medusa_04-500.webp 500w,
-              img/medusa_04-700.webp 700w,
-              img/medusa_04-900.webp 900w"
-            sizes="(max-width: 300px) 300px,
-                  (max-width: 500px) 500px,
-                  (max-width: 700px) 700px,
-                  900px"
-            src="img/medusa_04-700.webp" 
-            alt="Description de l’image">
-          </div>
-          <div class="images_container">
-            <img 
-            srcset="
-              img/medusa_05-300.webp 300w,
-              img/medusa_05-500.webp 500w,
-              img/medusa_05-700.webp 700w,
-              img/medusa_05-900.webp 900w"
-            sizes="(max-width: 300px) 300px,
-                  (max-width: 500px) 500px,
-                  (max-width: 700px) 700px,
-                  900px"
-            src="img/medusa_05-700.webp" 
-            alt="Description de l’image">
-          </div>
-          <div class="images_container">
-            <img 
-            srcset="
-              img/medusa_06-300.webp 300w,
-              img/medusa_06-500.webp 500w,
-              img/medusa_06-700.webp 700w,
-              img/medusa_06-900.webp 900w"
-            sizes="(max-width: 300px) 300px,
-                  (max-width: 500px) 500px,
-                  (max-width: 700px) 700px,
-                  900px"
-            src="img/medusa_06-700.webp" 
-            alt="Description de l’image">
-          </div>
+
         </div> <!-- fin div images -->
       </div> <!-- fin div col-50 -->
 
       <div class="col-50">
-        <p class="point"><strong>Contenus percutants :</strong> <br>Basés sur des recherches solides, le site casse les
-          stéréotypes sexistes et invite à réfléchir.</p>
+        <p class="point"><strong>Inclusion : Un langage neutre et des représentations variées</strong>
+        <ul class="deco_none">
+          <li>
+            <ul>
+              <li><strong>Ton :</strong> J'ai opté pour un langage neutre pour éviter les divisions de genre souvent
+                exacerbées par ce type de sujet.</li>
+              <li><strong>Représentation :</strong>: Dans les mises en situation et les illustrations, j'ai varié les
+                orientations sexuelles des couples, car la culture du viol ne concerne pas uniquement les couples
+                hétérosexuels. J'ai également travaillé sur la diversité des profils pour refléter la réalité de la
+                société.
+                C'est un travail en cours, mais c'est une priorité pour moi.
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        </p>
         <div class="images">
           <div class="images_container">
-            <img 
-            srcset="
-              img/ecoutons-300.webp 300w,
-              img/ecoutons-500.webp 500w,
-              img/ecoutons-700.webp 700w,
-              img/ecoutons-900.webp 900w"
-            sizes="(max-width: 300px) 300px,
+            <img srcset="
+              img/culture_05-300.webp 300w,
+              img/culture_05-500.webp 500w,
+              img/culture_05-700.webp 700w,
+              img/culture_05-900.webp 900w" sizes="(max-width: 300px) 300px,
                   (max-width: 500px) 500px,
                   (max-width: 700px) 700px,
-                  900px"
-            src="img/ecoutons-700.webp" 
-            alt="Description de l’image">
+                  900px" src="img/culture_05-700.webp" alt="Description de l’image">
           </div>
           <div class="images_container">
-            <img 
-            srcset="
-              img/solution_01-300.webp 300w,
-              img/solution_01-500.webp 500w,
-              img/solution_01-700.webp 700w,
-              img/solution_01-900.webp 900w"
-            sizes="(max-width: 300px) 300px,
+            <img srcset="
+              img/culture_03-300.webp 300w,
+              img/culture_03-500.webp 500w,
+              img/culture_03-700.webp 700w,
+              img/culture_03-900.webp 900w" sizes="(max-width: 300px) 300px,
                   (max-width: 500px) 500px,
                   (max-width: 700px) 700px,
-                  900px"
-            src="img/solution_01-700.webp" 
-            alt="Description de l’image">
-          </div>
-          <div class="images_container">
-            <img 
-            srcset="
-              img/classer-300.webp 300w,
-              img/classer-500.webp 500w,
-              img/classer-700.webp 700w,
-              img/classer-900.webp 900w"
-            sizes="(max-width: 300px) 300px,
-                  (max-width: 500px) 500px,
-                  (max-width: 700px) 700px,
-                  900px"
-            src="img/classer-700.webp" 
-            alt="Description de l’image">
+                  900px" src="img/culture_03-700.webp" alt="Description de l’image">
           </div>
         </div>
       </div>
 
       <div class="col-50">
-        <p class="point"><strong>Ressources concrètes : </strong> <br>En collaboration avec des sources comme Amnesty
-          International ou ONU Femmes, des graphiques et outils ont été intégrés pour encourager des actions concrètes.
+        <p class="point"><strong>Éducation :</strong> <br>J'essaie d'expliquer les concepts en profondeur, mais de
+          manière digeste. Sur la page dédiée au consentement, par exemple, je ne me contente pas de définitions : je
+          donne des exemples concrets pour savoir comment demander, donner, refuser ou retirer son consentement, et
+          comment vérifier que l'autre est bien d'accord. L'idée est de proposer des solutions pratiques et variées.
         </p>
 
         <div class="images">
           <div class="images_container">
-            <img 
-            srcset="
-              img/sondage_01-300.webp 300w,
-              img/sondage_01-500.webp 500w,
-              img/sondage_01-700.webp 700w,
-              img/sondage_01-900.webp 900w"
-            sizes="(max-width: 300px) 300px,
+            <img srcset="
+              img/culture_04-300.webp 300w,
+              img/culture_04-500.webp 500w,
+              img/culture_04-700.webp 700w,
+              img/culture_04-900.webp 900w" sizes="(max-width: 300px) 300px,
                   (max-width: 500px) 500px,
                   (max-width: 700px) 700px,
-                  900px"
-            src="img/sondage_01-700.webp" 
-            alt="Description de l’image">
-          </div>
-          <div class="images_container">
-            <img 
-            srcset="
-              img/sondage_02-300.webp 300w,
-              img/sondage_02-500.webp 500w,
-              img/sondage_02-700.webp 700w,
-              img/sondage_02-900.webp 900w"
-            sizes="(max-width: 300px) 300px,
-                  (max-width: 500px) 500px,
-                  (max-width: 700px) 700px,
-                  900px"
-            src="img/sondage_02-700.webp" 
-            alt="Description de l’image">
-          </div>
-          <div class="images_container">
-            <img 
-            srcset="
-              img/sondage_03-300.webp 300w,
-              img/sondage_03-500.webp 500w,
-              img/sondage_03-700.webp 700w,
-              img/sondage_03-900.webp 900w"
-            sizes="(max-width: 300px) 300px,
-                  (max-width: 500px) 500px,
-                  (max-width: 700px) 700px,
-                  900px"
-            src="img/sondage_03-700.webp" 
-            alt="Description de l’image">
-          </div>
-          <div class="images_container">
-            <img 
-            srcset="
-              img/sondage_04-300.webp 300w,
-              img/sondage_04-500.webp 500w,
-              img/sondage_04-700.webp 700w,
-              img/sondage_04-900.webp 900w"
-            sizes="(max-width: 300px) 300px,
-                  (max-width: 500px) 500px,
-                  (max-width: 700px) 700px,
-                  900px"
-            src="img/sondage_04-700.webp" 
-            alt="Description de l’image">
+                  900px" src="img/culture_04-700.webp" alt="Description de l’image">
           </div>
         </div>
       </div> <!-- Fin col-50 -->
 
-      <div class="col-50">
-        <p><strong class="sub-titre">Un projet à impact personnel</strong> <br>Ce projet est plus qu’un exercice
-          technique. C’est
-          l’expression de mes valeurs et de mon engagement pour les droits des femmes. Réaliser ce site m’a permis de
-          mettre mes compétences au service d’un sujet qui me touche profondément.</p>
-      </div>
 
       <div class="col-1 anim">
-        <h2 class="titre">Résultats et Valeurs</h2>
+        <h2 class="titre">En conclusion </h2>
         <div class="texte">
-          <ul>
-            <li><strong>Un site à impact social :</strong> Conçu pour sensibiliser et proposer des solutions accessibles
-              autour des questions de justice sociale.</li>
-            <li><strong>Une expérience utilisateur immersive :</strong> Grâce aux animations et au design interactif,
-              les
-              visiteurs sont invités à s’engager émotionnellement.</li>
-            <li><strong>Un reflet de mes valeurs :</strong> Ce projet illustre mon sens de l’éthique, ma créativité et
-              ma
-              capacité à utiliser la technologie pour servir des causes importantes.</li>
-          </ul>
+          <p>C'est un projet ambitieux et un long processus. Je sais qu'il reste des marges de progression et que la
+            perfection n'est pas encore atteinte. Mon ambition est de faire de ce site une ressource fiable, la
+            référence sur la culture du viol, et peut-être un jour, un support d'atelier concret.
+
+          </p>
+          <p>Pour cela, j'ai besoin de vous. Si ce projet vous inspire, si vous avez des retours ou si vous pensez
+            pouvoir m'apporter une expertise (pédagogie, design, contenu), n'hésitez pas à m'envoyer un message.
+            J'aimerais beaucoup collaborer avec vous pour faire évoluer ce projet vers ce qu'il doit être.</p>
+
         </div>
+        <p>
+          <a class="texte_link" href="https://cultureduoui.be/" target="_blank">&#10230; Voir Culture du Oui</a>
+        </p>
+
 
       </div>
 
 
       <div class="col-1 anim">
+        <h2 class="titre">Technologies et Outils Utilisés</h2>
         <div class="texte">
-          <h2 class="titre">Technologies et Outils Utilisés</h2>
-          <p class="sub-titre">Ce projet m’a permis d'explorer plusieurs technologies :</p>
+          <p class="intro">Ce projet m’a permis d'explorer plusieurs technologies :</p>
           <ul>
-            <li><strong>HTML, CSS, PHP :</strong> Pour la structure du site et l’intégration dynamique des illustrations
-              SVG.</li>
-            <li><strong>Splide.js :</strong> Un carrousel interactif pour une exploration engageante des stéréotypes.
+            <li><strong>HTML, CSS, PHP et Wordpress:</strong> Pour la structure du site et la dynamisation du contenu.
             </li>
             <li><strong>Vivus.js :</strong> Des animations SVG qui renforcent la symbolique narrative.</li>
             <li><strong>Locomotive Scroll :</strong> Pour des effets de défilement immersifs qui évoquent fluidité et
-              mouvement.</li>
-            <li><strong>Bodymovin – Lottie :</strong> Des animations vectorielles modernes et légères.</li>
+              apesanteur.</li>
             <li><strong>GSAP :</strong> Gestion d’animations complexes pour une expérience utilisateur fluide et
               dynamique.</li>
           </ul>
@@ -333,11 +228,15 @@
 
 
   <div class="container container-desktop">
-    <div class="medusa_1">
-      <video controls>
-        <source src="/video/video_medusa.mp4" type="video/mp4" />
-        <p>Vidéo de démonstration de mon site "Qui est le vrai monstre"</p>
-      </video>
+    <div class="thumbnail">
+      <img srcset="
+              img/culture_thumbnail-640.webp 640w,
+              img/culture_thumbnail-960.webp 960w,
+              img/culture_thumbnail-1280.webp 1280w,
+              img/culture_thumbnail-1920.webp 1920w" sizes="(max-width: 640px) 640px,
+                  (max-width: 960px) 960px,
+                  (max-width: 1280px) 1280px,
+                  1920px" src="img/Culture_thumbnail-1280.webp" alt="Description de l’image">
     </div>
 
 
@@ -346,16 +245,20 @@
     <div class="col-1 anim">
       <h2 class="titre">Contexte du Projet</h2>
       <div class="texte">
-        <p><strong>"Qui est le vrai monstre ?"</strong> n’est pas juste un projet de fin d’études, c’est une démarche
-          qui
-          me tient à cœur. Ce site web explore la culture du viol, un phénomène qui banalise les agressions sexuelles et
-          perpétue des injustices envers les victimes. L’idée est née d’une réflexion personnelle sur la stigmatisation
-          des victimes, inspirée par le mythe de Méduse. Cette figure tragique, transformée en "monstre" après avoir
-          subi
-          une agression, représente encore aujourd’hui le silence et le rejet imposés à tant de personnes. Le site a une
-          double mission: éveiller les consciences et proposer des outils concrets pour agir. Il invite à déconstruire
-          les
-          préjugés et à participer activement à un changement sociétal.</p>
+        <p><strong>Culture du Oui</strong> a débuté comme mon Travail de Fin d'Études. Inspiré par le mythe de Méduse –
+          symbole de la victime transformée en "monstre" – j'ai voulu explorer la culture du viol et la stigmatisation
+          des victimes. Méduse reste le fil conducteur de cette histoire, un point de départ mythologique pour parler de
+          réalités contemporaines.</p>
+        <p>La première version se concentrait sur la visualisation de données brutes : montrer l'ampleur du viol,
+          débusquer les stéréotypes. Si l'impact visuel était là, je sentais que le message restait parfois froid.</p>
+        <p><strong>En août 2025</strong>, j'ai repris le projet mais j'ai transformé l'approche. Le site est maintenant
+          plus ludique, plus interactif. J'ai intégré des quiz, des petites interactions et une narration plus profonde.
+          L'objectif n'est plus seulement de "montrer" le problème, mais de proposer des solutions concrètes et
+          d'éduquer le public avec bienveillance.</p>
+        <p><strong>Aujourd'hui</strong>, c'est un travail en cours, mais déjà actif. C'est une démarche personnelle pour
+          changer les choses, une ligne après l'autre.
+
+        </p>
       </div>
     </div>
 
@@ -365,22 +268,32 @@
       <div class="col-50">
         <div class="col-text">
           <h2 class="titre">Une Approche Engagée et Créative</h2>
-          <p class="col-2-p">Sensibilisation à travers le design et le contenu:</p>
+          <p class="col-2-p">Voici les piliers sur lesquels j'ai construit cette nouvelle version :</p>
           <ul id="point">
-            <li id="item-01"><strong>Une narration immersive : </strong> <br>Le parallèle avec Méduse apporte une touche
-              artistique et
-              émotionnelle, connectant mythologie et problématiques actuelles.</li>
-            <li id="item-02"><strong>Contenus percutants : </strong> <br>Basés sur des recherches solides, le site casse
-              les stéréotypes
-              sexistes et invite à réfléchir.</li>
-            <li id="item-03"><strong>Ressources concrètes : </strong> <br>En collaboration avec des sources comme
-              Amnesty International ou
-              ONU Femmes, des graphiques et outils ont été intégrés pour encourager des actions concrètes.</li>
+            <li id="item-01"><strong>Interactivité : </strong> <br>J'ai voulu briser la monotonie du défilement de
+              données. J'ai intégré plusieurs formats de quiz ludiques et des interactions au clic (comme le
+              générateur de Safe Word). Mon objectif est que l'utilisateur ne soit pas passif : il doit interagir,
+              piquer sa curiosité et rester engagé dans le parcours.
+            </li>
+            <li id="item-02"><strong>Inclusion : Un langage neutre et des représentations variées </strong>
+              <ul>
+                <li><strong>Ton :</strong> J'ai opté pour un langage neutre pour éviter les divisions de genre souvent
+                  exacerbées par ce
+                  type de sujet.</li>
+                <li><strong>Représentation :</strong> Dans les mises en situation et les illustrations, j'ai varié les
+                  orientations sexuelles
+                  des couples, car la culture du viol ne concerne pas uniquement les couples hétérosexuels. J'ai
+                  également
+                  travaillé sur la diversité des profils pour refléter la réalité de la société. C'est un travail en
+                  cours, mais c'est une priorité pour moi.</li>
+              </ul>
+            </li>
+            <li id="item-03"><strong>Éducation : </strong> <br>J'essaie d'expliquer les concepts en profondeur, mais
+              de manière digeste. Sur la page dédiée au consentement, par exemple, je ne me contente pas de
+              définitions : je donne des exemples concrets pour savoir comment demander, donner, refuser ou retirer
+              son consentement, et comment vérifier que l'autre est bien d'accord. L'idée est de proposer des
+              solutions pratiques et variées.</li>
           </ul>
-          <p id="item-04"><strong class="sub-titre">Un projet à impact personnel</strong> <br>Ce projet est plus qu’un
-            exercice technique. C’est
-            l’expression de mes valeurs et de mon engagement pour les droits des femmes. Réaliser ce site m’a permis de
-            mettre mes compétences au service d’un sujet qui me touche profondément. </p>
         </div>
       </div>
 
@@ -388,202 +301,77 @@
       <div class="col-50" id="col-images">
         <div class="images">
           <div class="images_container" id="trigger-01">
-            <img 
-            srcset="
-              img/medusa_01-300.webp 300w,
-              img/medusa_01-500.webp 500w,
-              img/medusa_01-700.webp 700w,
-              img/medusa_01-900.webp 900w"
-            sizes="(max-width: 300px) 300px,
+            <img srcset="
+              img/culture_01-300.webp 300w,
+              img/culture_01-500.webp 500w,
+              img/culture_01-700.webp 700w,
+              img/culture_01-900.webp 900w" sizes="(max-width: 300px) 300px,
                   (max-width: 500px) 500px,
                   (max-width: 700px) 700px,
-                  900px"
-            src="img/medusa_01-700.webp" 
-            alt="Description de l’image">
+                  900px" src="img/culture_01-700.webp" alt="Description de l’image">
           </div>
           <div class="images_container">
-            <img 
-            srcset="
-              img/medusa_02-300.webp 300w,
-              img/medusa_02-500.webp 500w,
-              img/medusa_02-700.webp 700w,
-              img/medusa_02-900.webp 900w"
-            sizes="(max-width: 300px) 300px,
+            <img srcset="
+              img/culture_02-300.webp 300w,
+              img/culture_02-500.webp 500w,
+              img/culture_02-700.webp 700w,
+              img/culture_02-900.webp 900w" sizes="(max-width: 300px) 300px,
                   (max-width: 500px) 500px,
                   (max-width: 700px) 700px,
-                  900px"
-            src="img/medusa_02-700.webp" 
-            alt="Description de l’image">
-          </div>
-          <div class="images_container">
-            <img 
-            srcset="
-              img/medusa_03-300.webp 300w,
-              img/medusa_03-500.webp 500w,
-              img/medusa_03-700.webp 700w,
-              img/medusa_03-900.webp 900w"
-            sizes="(max-width: 300px) 300px,
-                  (max-width: 500px) 500px,
-                  (max-width: 700px) 700px,
-                  900px"
-            src="img/medusa_03-700.webp" 
-            alt="Description de l’image">
-          </div>
-          <div class="images_container">
-            <img 
-            srcset="
-              img/medusa_04-300.webp 300w,
-              img/medusa_04-500.webp 500w,
-              img/medusa_04-700.webp 700w,
-              img/medusa_04-900.webp 900w"
-            sizes="(max-width: 300px) 300px,
-                  (max-width: 500px) 500px,
-                  (max-width: 700px) 700px,
-                  900px"
-            src="img/medusa_04-700.webp" 
-            alt="Description de l’image">
-          </div>
-          <div class="images_container">
-            <img 
-            srcset="
-              img/medusa_05-300.webp 300w,
-              img/medusa_05-500.webp 500w,
-              img/medusa_05-700.webp 700w,
-              img/medusa_05-900.webp 900w"
-            sizes="(max-width: 300px) 300px,
-                  (max-width: 500px) 500px,
-                  (max-width: 700px) 700px,
-                  900px"
-            src="img/medusa_05-700.webp" 
-            alt="Description de l’image">
-          </div>
-          <div class="images_container">
-            <img 
-            srcset="
-              img/medusa_06-300.webp 300w,
-              img/medusa_06-500.webp 500w,
-              img/medusa_06-700.webp 700w,
-              img/medusa_06-900.webp 900w"
-            sizes="(max-width: 300px) 300px,
-                  (max-width: 500px) 500px,
-                  (max-width: 700px) 700px,
-                  900px"
-            src="img/medusa_06-700.webp" 
-            alt="Description de l’image">
+                  900px" src="img/culture_02-700.webp" alt="Description de l’image">
           </div>
           <div class="images_container" id="trigger-02">
-            <img 
-            srcset="
-              img/ecoutons-300.webp 300w,
-              img/ecoutons-500.webp 500w,
-              img/ecoutons-700.webp 700w,
-              img/ecoutons-900.webp 900w"
-            sizes="(max-width: 300px) 300px,
+            <img srcset="
+              img/culture_05-300.webp 300w,
+              img/culture_05-500.webp 500w,
+              img/culture_05-700.webp 700w,
+              img/culture_05-900.webp 900w" sizes="(max-width: 300px) 300px,
                   (max-width: 500px) 500px,
                   (max-width: 700px) 700px,
-                  900px"
-            src="img/ecoutons-700.webp" 
-            alt="Description de l’image">
+                  900px" src="img/culture_05-700.webp" alt="Description de l’image">
           </div>
           <div class="images_container">
-            <img 
-            srcset="
-              img/solution_01-300.webp 300w,
-              img/solution_01-500.webp 500w,
-              img/solution_01-700.webp 700w,
-              img/solution_01-900.webp 900w"
-            sizes="(max-width: 300px) 300px,
+            <img srcset="
+              img/culture_03-300.webp 300w,
+              img/culture_03-500.webp 500w,
+              img/culture_03-700.webp 700w,
+              img/culture_03-900.webp 900w" sizes="(max-width: 300px) 300px,
                   (max-width: 500px) 500px,
                   (max-width: 700px) 700px,
-                  900px"
-            src="img/solution_01-700.webp" 
-            alt="Description de l’image">
-          </div>
-          <div class="images_container">
-            <img 
-            srcset="
-              img/classer-300.webp 300w,
-              img/classer-500.webp 500w,
-              img/classer-700.webp 700w,
-              img/classer-900.webp 900w"
-            sizes="(max-width: 300px) 300px,
-                  (max-width: 500px) 500px,
-                  (max-width: 700px) 700px,
-                  900px"
-            src="img/classer-700.webp" 
-            alt="Description de l’image">
+                  900px" src="img/culture_03-700.webp" alt="Description de l’image">
           </div>
           <div class="images_container" id="trigger-03">
-            <img 
-            srcset="
-              img/sondage_01-300.webp 300w,
-              img/sondage_01-500.webp 500w,
-              img/sondage_01-700.webp 700w,
-              img/sondage_01-900.webp 900w"
-            sizes="(max-width: 300px) 300px,
+            <img srcset="
+              img/culture_04-300.webp 300w,
+              img/culture_04-500.webp 500w,
+              img/culture_04-700.webp 700w,
+              img/culture_04-900.webp 900w" sizes="(max-width: 300px) 300px,
                   (max-width: 500px) 500px,
                   (max-width: 700px) 700px,
-                  900px"
-            src="img/sondage_01-700.webp" 
-            alt="Description de l’image">
+                  900px" src="img/culture_04-700.webp" alt="Description de l’image">
           </div>
-          <div class="images_container">
-            <img 
-            srcset="
-              img/sondage_02-300.webp 300w,
-              img/sondage_02-500.webp 500w,
-              img/sondage_02-700.webp 700w,
-              img/sondage_02-900.webp 900w"
-            sizes="(max-width: 300px) 300px,
-                  (max-width: 500px) 500px,
-                  (max-width: 700px) 700px,
-                  900px"
-            src="img/sondage_02-700.webp" 
-            alt="Description de l’image">
-          </div>
-          <div class="images_container">
-            <img 
-            srcset="
-              img/sondage_03-300.webp 300w,
-              img/sondage_03-500.webp 500w,
-              img/sondage_03-700.webp 700w,
-              img/sondage_03-900.webp 900w"
-            sizes="(max-width: 300px) 300px,
-                  (max-width: 500px) 500px,
-                  (max-width: 700px) 700px,
-                  900px"
-            src="img/sondage_03-700.webp" 
-            alt="Description de l’image">
-          </div>
-          <div class="images_container" id="trigger-04">
-            <img 
-            srcset="
-              img/sondage_04-300.webp 300w,
-              img/sondage_04-500.webp 500w,
-              img/sondage_04-700.webp 700w,
-              img/sondage_04-900.webp 900w"
-            sizes="(max-width: 300px) 300px,
-                  (max-width: 500px) 500px,
-                  (max-width: 700px) 700px,
-                  900px"
-            src="img/sondage_04-700.webp" 
-            alt="Description de l’image">
-          </div>
+
         </div>
       </div>
     </div>
 
     <div class="col-1 anim">
-      <h2 class="titre">Résultats et Valeurs</h2>
+      <h2 class="titre">En conclusion </h2>
       <div class="texte">
-        <ul>
-          <li><strong>Un site à impact social :</strong> Conçu pour sensibiliser et proposer des solutions accessibles
-            autour des questions de justice sociale.</li>
-          <li><strong>Une expérience utilisateur immersive :</strong> Grâce aux animations et au design interactif, les
-            visiteurs sont invités à s’engager émotionnellement.</li>
-          <li><strong>Un reflet de mes valeurs :</strong> Ce projet illustre mon sens de l’éthique, ma créativité et ma
-            capacité à utiliser la technologie pour servir des causes importantes.</li>
-        </ul>
+        <p>C'est un projet ambitieux et un long processus. Je sais qu'il reste des marges de progression et que la
+          perfection n'est pas encore atteinte. Mon ambition est de faire de ce site une ressource fiable, la
+          référence sur la culture du viol, et peut-être un jour, un support d'atelier concret.
+        </p>
+        <p>
+          Pour cela, j'ai besoin de vous. Si ce projet vous inspire, si vous avez des retours ou si vous pensez
+          pouvoir m'apporter une expertise (pédagogie, design, contenu), n'hésitez pas à m'envoyer un message.
+          J'aimerais beaucoup collaborer avec vous pour faire évoluer ce projet vers ce qu'il doit être.
+
+        </p>
+        <p>
+          <a class="texte_link" href="https://cultureduoui.be/" target="_blank">&#10230; Voir Culture du Oui</a>
+        </p>
+
       </div>
     </div>
 
@@ -593,23 +381,16 @@
       <div class="texte">
         <p class="intro">Ce projet m’a permis d'explorer plusieurs technologies :</p>
         <ul>
-          <li><strong>HTML, CSS, PHP :</strong> Pour la structure du site et l’intégration dynamique des illustrations
-            SVG.</li>
-          <li><strong>Splide.js :</strong> Un carrousel interactif pour une exploration engageante des stéréotypes.</li>
+          <li><strong>HTML, CSS, PHP et Wordpress:</strong> Pour la structure du site et la dynamisation du contenu.
+          </li>
           <li><strong>Vivus.js :</strong> Des animations SVG qui renforcent la symbolique narrative.</li>
           <li><strong>Locomotive Scroll :</strong> Pour des effets de défilement immersifs qui évoquent fluidité et
-            mouvement.</li>
-          <li><strong>Bodymovin – Lottie :</strong> Des animations vectorielles modernes et légères.</li>
+            apesanteur.</li>
           <li><strong>GSAP :</strong> Gestion d’animations complexes pour une expérience utilisateur fluide et
             dynamique.</li>
         </ul>
       </div>
     </div>
-
-
-
-
-
 
 
   </div> <!-- Fin container DESKTOP-->
@@ -618,7 +399,7 @@
 
 
   <footer>
-    <a href="/nana_mobiler.html" class="btn btn-next">
+    <a href="/waka_up.html" class="btn btn-next">
       <span>Travail&nbsp;suivant&nbsp;&#10230;</span>
     </a>
   </footer>

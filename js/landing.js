@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Vérifie si on a cliqué sur ".landing-btn" avant de revenir à l'accueil
     if (sessionStorage.getItem("landingClicked") === "true") {
         setTimeout(() => {
-            document.querySelector("#formation").classList.add("clickable");
+            document.querySelector("#benevolat").classList.add("clickable");
   
             // Nettoyer après l'utilisation
             sessionStorage.removeItem("landingClicked");

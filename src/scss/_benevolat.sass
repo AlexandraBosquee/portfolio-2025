@@ -1,0 +1,378 @@
+.torn
+    margin: 0 auto
+    max-width: 60%
+    padding: 3rem 3rem 6rem 3rem
+    background-image: url('../svg/torn.svg')
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    .sous-titre
+        color: $bg
+        font-size: clamp(1.2rem, 2vw, 2rem)
+    .interaction
+        color: $bg
+        .arrow_down
+            border: solid $bg
+            border-width: 0 0.125rem 0.125rem 0
+            animation: none
+    .titre, ul
+        color: $bg
+
+.torn_small
+    padding: 3rem 3rem 12rem 3rem
+
+.palaroid
+    display: block
+    background-color: $white
+    aspect-ratio: 5/6
+    position: relative
+    box-shadow: 0.125rem 0.250rem 0.5rem rgba(0,0,0,0.2)
+    img
+        position: absolute
+        left: 50%
+        top: 4.5%
+        transform: translateX(-50%)
+        height: 76%
+        aspect-ratio: 1/1
+    span
+        font-family: 'montserrat_alternatesregular'
+        font-size: clamp(0.75rem, 1.5vw, 1.2rem) !important
+        color: $bg
+        position: absolute
+        bottom: 8%
+        left: 50%
+        transform: translateX(-50%)
+        width: 90%
+        text-align: center
+    a
+        color: $bg
+
+.container_grid
+    margin: 30rem 0 8rem
+.grid_intro
+    grid-column: 1 / 3
+    grid-row: 1
+    .titre
+        background-color: $bg
+        width: fit-content
+    p
+        padding-left: 0
+        background-color: $bg
+.grid_deco
+    text-align: center
+    svg
+        width: 60%
+
+.grid_photo
+    .palaroid
+        width: 80%
+        margin: 0 auto
+
+.post-it
+    background-image: url('../svg/post-it.svg')
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    aspect-ratio: 1 / 1
+    width: 75%
+
+/* Grid accolage--------------
+
+
+.grid_accolage
+    display: grid
+    grid-template-columns: repeat(6, minmax(100px, 1fr))
+    grid-template-rows: auto auto auto
+
+.deco_01
+    grid-column: 6
+    grid-row: 1
+
+.deco_02
+    grid-column: 3
+    grid-row: 2
+
+.deco_03
+    grid-column: 6
+    grid-row: 3
+
+.cinema
+    grid-column: 1 / 3
+    grid-row: 2
+    svg
+        width: 100%
+
+#colette
+    transform: rotate(5deg)
+
+.accolage_01
+    grid-column: 4 / 6
+    grid-row: 1
+    z-index: 2
+
+.accolage_02
+    grid-column: 4 / 6
+    grid-row: 2
+
+#fransisco
+    transform: rotate(-5deg)
+
+/* Grid web --------------
+
+
+.grid_web
+    display: grid
+    grid-template-columns: repeat(6, minmax(100px, 1fr))
+    grid-template-rows: auto auto auto
+    row-gap: 8rem
+
+    .grid_post-it
+        grid-column: 5 / -1
+        grid-row: 1
+        text-align: center
+        .post-it
+            display: inline-block
+            transform: rotate(20deg)
+            &_texte
+                padding: 25% 1rem
+                text-align: center
+                color: $bg
+
+    .web_01
+        grid-column: 1 / 3
+        grid-row: 2
+    .web_02
+        grid-column: 3 / 5
+        grid-row: 2
+    .web_03
+        grid-column: 5 / -1
+        grid-row: 2
+
+    #web_01
+        transform: rotate(-5deg)
+    #web_02
+        transform: rotate(5deg)
+    #web_03
+        transform: rotate(-8deg)
+
+/* Section waka -------------------------------------------
+
+.container_waka
+    margin-top: 20rem
+    background-image: url('../svg/ligne_01.svg')
+    background-size: 100% 95%
+    background-position: center
+    background-repeat: no-repeat
+
+.grid_tisse
+    display: grid
+    grid-template-columns: repeat(6, minmax(100px, 1fr))
+    grid-template-rows: auto auto auto auto
+
+    .tisse_01
+        grid-column: 4 / 6
+        grid-row: 1
+    .tisse_02
+        grid-column: 1 / 3
+        grid-row: 2
+    .tisse_03
+        grid-column: 4 / 6
+        grid-row: 3
+    .tisse_04
+        grid-column: 1 / 3
+        grid-row: 4
+
+    #tisse_01
+        transform: rotate(5deg)
+    #tisse_02
+        transform: rotate(-8deg)
+    #tisse_03
+        transform: rotate(10deg)
+    #tisse_04
+        transform: rotate(-5deg)
+
+.bulle
+    border: 0.125rem solid $white
+    width: 12rem
+    height: 12rem
+    border-radius: 100%
+    position: relative
+    display: inline-block
+    background-color: $bg
+    p
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50% , -50%)
+    svg
+        width: 6rem
+        position: absolute
+
+.bulle_01
+    grid-column: 3
+    grid-row: 1
+    svg
+        bottom: -14%
+        right: -5rem
+
+.bulle_02
+    grid-column: 6
+    grid-row: 1
+    align-self: end
+    svg
+        top: -14%
+        left: -5rem
+        transform: rotate(180deg)
+
+.bulle_03
+    grid-column: 3
+    grid-row: 3
+    svg
+        bottom: -14%
+        right: -5rem
+
+.bulle_04
+    grid-column: 6
+    grid-row: 3
+    align-self: end
+    svg
+        top: -14%
+        left: -5rem
+        transform: rotate(180deg)
+
+.bulle_05
+    grid-column: 3
+    grid-row: 4
+    align-self: end
+    svg
+        top: -14%
+        left: -5rem
+        transform: rotate(180deg)
+
+/* grid moments --------------------------------
+
+.grid_moments
+    display: grid
+    grid-template-columns: repeat(6, minmax(100px, 1fr))
+    grid-template-rows: auto auto
+
+.moment_01
+    grid-column: 1 /3
+    grid-row: 2
+
+.moment_02
+    grid-column: 3 / 5
+    grid-row: 1
+
+.moment_03
+    grid-column: 5 / -1
+    grid-row: 2
+
+.moment_04
+    grid-column: 3 / 5
+    grid-row: 3
+
+#moment_01
+    transform: rotate(-10deg)
+
+#moment_02
+    transform: rotate(-5deg)
+
+#moment_03
+    transform: rotate(10deg)
+
+#moment_04
+    transform: rotate(-3deg)
+
+/* MEDIA --------------------------------
+
+@media (max-width: $laptop)
+    .container_waka
+        background-image: url('../svg/ligne_02.svg')
+
+    .torn
+        max-width: 80%
+
+    .torn_small
+        padding: 3rem 3rem 6rem 3rem
+
+    .grid_intro
+        grid-column: 1 / 4
+        grid-row: 1
+
+    .grid_web
+        .grid_post-it
+            grid-column: 4 / -1
+
+    .bulle
+        width: 8rem
+        height: 8rem
+        svg
+            width: 4rem
+
+    .bulle_01
+        align-self: end
+
+    .bulle_02
+        align-self: start
+
+    .bulle_L
+        svg
+            right: -3.5rem
+
+    .bulle_R
+        width: 10rem
+        height: 10rem
+        svg
+            left: -2.7rem
+
+@media (max-width: $tablet)
+    .torn
+        max-width: 100%
+        padding: 2rem 2rem 5rem 2rem
+    .palaroid
+        span
+            bottom: 6%
+    .bulle_L
+        width: 6rem
+        height: 6rem
+        svg
+            width: 3rem
+            right: -2.5rem
+
+    .bulle_R
+        svg
+            width: 3rem
+            left: -1.8rem
+
+@media (max-width: $midlet)
+    .grid_accolage, .grid_web, .grid_tisse, .grid_moments
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+
+    .grid_photo
+        .palaroid
+            margin: 1rem auto
+            width: 75%
+
+    .grid_deco
+        display: none
+    .cinema
+        display: block
+
+    .grid_web
+        row-gap: 0
+
+    .post-it
+        width: 65%
+
+    .grid_intro
+        margin-bottom: 3rem
+
+    .container_waka
+        margin-top: 10rem
+        background-image: none
+
+    .container_grid
+        margin: 10rem 0 2rem
