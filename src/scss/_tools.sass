@@ -1,25 +1,63 @@
-.marteau-1 
-    fill: none
-    stroke: #182240
-    stroke-miterlimit: 10
+.container_2d, .container_video
+    display: flex
+    flex-direction: row
+    flex-wrap: nowrap
+    align-items: flex-end
+    width: max-content
+    .items_2d
+        margin: 2rem 4rem 12rem 4rem
+        display: flex
+        flex-direction: column
+        align-items: center
+        height: 50vh
+        aspect-ratio: 1/1
+        img
+            width: 100%
+            height: 100%
+            aspect-ratio: 1/1
+            object-fit: contain
 
+.container_video
+    .items_video
+        margin: 2rem 4rem 12rem 4rem
+        display: flex
+        flex-direction: column
+        align-items: center
+        height: 50vh
+        aspect-ratio: 16 / 9
+        img, video
+            aspect-ratio: 16 / 9
+            width: 100%
+            height: 100%
+            object-fit: contain
 
-.marteau-2 
-    fill: #f3c14d
+.container_tools
+    .intro
+        width: 50%
+    h3
+        padding-top: 1rem
 
+.tools_video
+    margin-top: 8rem
+.toold_video, .tools_2d
+    overflow: hidden
 
-.marteau-3 
-    fill: #eddeeb
+@media (max-width: $tablet)
 
+    .container_2d, .container_video
+        display: flex
+        flex-direction: column
+        flex-wrap: nowrap
+        align-items: flex-end
+        .items_2d, .items_video
+            margin: 2rem 1rem 2rem 1rem
+            display: flex
+            flex-direction: column
+            align-items: center
+            aspect-ratio: auto
+            height: auto
+            width: calc( 100vw - 4rem )
 
-.marteau-4 
-    fill: #237ab5
-
-
-.marteau-5 
-    fill: #182240
-
-
-.marteau-6 
-    fill: #c12934
-
+    .container_tools
+        .intro
+            width: 100%
