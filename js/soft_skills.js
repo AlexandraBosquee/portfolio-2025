@@ -29,7 +29,6 @@ gsap.utils.toArray(".racine-groupe").forEach((groupe) => {
       toggleActions: "play none none reverse",
       scrub: 1,
       end: "bottom center",
-      markers: true,
     },
   });
 

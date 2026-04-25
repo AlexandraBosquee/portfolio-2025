@@ -48,7 +48,6 @@ function apparitionScroll(itemsSelector) {
         trigger: item,
         start: "top 50%",
         toggleActions: "play none none reverse",
-        markers: true,
       },
     });
   });
